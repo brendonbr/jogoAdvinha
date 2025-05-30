@@ -1,0 +1,23 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:sans-serif
+}
+
+body{
+    text-align: center;
+
+}
+
+header > h1{
+
+    font-size: 3rem;
+
+
+}
+
+
+
