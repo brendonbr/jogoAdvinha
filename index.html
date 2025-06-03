@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
     <script src="script.js"></script>
 </head>
 <body>
@@ -19,6 +19,7 @@
 
             <div>   
                 <p id="nFeedback"></p>
+                <p id="nPalpitados"></p>
             </div>
 
             <div>
@@ -32,13 +33,13 @@
         <article>
 
             <div>
-                <button> CHUTAR </button>
+                <button onclick="chutar()"> CHUTAR </button>
 
-                <label for="nChute">
-                    <input type="number" id="nChute">
+                <label for="nPalpite">
+                    <input type="number" id="nPalpite">
                 </label>
 
-                <button> CONFIRMAR </button>
+                <button onclick="jogar()"> CONFIRMAR </button>
             </div>
 
         </article>

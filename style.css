@@ -107,3 +107,7 @@ article:nth-child(2) div input[type="number"]{
     font-weight: 700;
 
 }
+
+#nPalpitados, #nChance, #nFeedback{
+    color:white
+}
