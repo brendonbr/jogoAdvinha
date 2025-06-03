@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jogo de Advinhação</title>
     <link rel="stylesheet" href="style.css"> 
     <script src="script.js"></script>
 </head>
@@ -11,36 +11,54 @@
     
     <header>
         <h1>JOGO DA ADVINHAÇÃO</h1>
+
+                <p>
+            Tente adivinhar o número secreto entre <strong>1 e 100</strong>.<br>
+            Você tem <strong>10 tentativas</strong>.<br>
+            Após cada palpite, você saberá se o número secreto é maior ou menor.<br>
+            Boa sorte!
+        </p>
     </header>
     
     <main>
 
-        <article >
+
+        <article id="telaDisplay">
 
             <div>   
                 <p id="nFeedback"></p>
-                <p id="nPalpitados"></p>
+                
             </div>
 
-            <div>
-            <p id="dica"></p>
-            <p id="nChance"></p>
+            <div>   
+                
+                <label for="nPalpitados">
+                    Numeros Palpitados
+                    <p id="nPalpitados"></p>
+                </label>
+                
+
+            <label for="nChance">
+                Chances
+                <p id="nChance">10</p>
+            </label>
+            
             </div>
 
 
         </article>
         
-        <article>
+        <article id="botoesCmd">
 
-            <div>
-                <button onclick="chutar()"> CHUTAR </button>
+           
+                <button id="btnChutar" onclick="chutar()"> CHUTAR </button>
 
                 <label for="nPalpite">
                     <input type="number" id="nPalpite">
                 </label>
 
-                <button onclick="jogar()"> CONFIRMAR </button>
-            </div>
+                <button id="btnConfirmar" onclick="jogar()"> CONFIRMAR </button>
+          
 
         </article>
 
